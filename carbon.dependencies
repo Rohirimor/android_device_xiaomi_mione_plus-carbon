@@ -6,8 +6,8 @@
   },
   {
     "target_path": "device/xiaomi/mione_plus",
-    "repository": "iptux/android_device_xiaomi_mione_plus",
-    "branch":"cm-11.0"
+    "repository": "malabarth/android_device_xiaomi_mione_plus-carbon",
+    "branch":"kk"
   },
   {
     "target_path": "vendor/xiaomi/mione_plus",
@@ -16,7 +16,8 @@
   },
   {
     "target_path": "hardware/qcom/display-legacy",
-    "repository": "Team-Hydra/android_hardware_qcom_display-legacy"
+    "repository": "Team-Hydra/android_hardware_qcom_display-legacy",
+    "branch":"cm-11.0"
   },
   {
     "target_path": "hardware/qcom/media-legacy",
