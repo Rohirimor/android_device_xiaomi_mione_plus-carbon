@@ -1,0 +1,36 @@
+*** /home/malabarth/carbon/external/wpa_supplicant_8/wpa_supplicant/android.config	2014-05-28 11:46:49.748429639 +0200
+--- /home/malabarth/carbon.old/external/wpa_supplicant_8/wpa_supplicant/android.config	2014-05-27 21:17:56.571190331 +0200
+***************
+*** 325,331 ****
+  
+  # IEEE 802.11w (management frame protection), also known as PMF
+  # Driver support is also needed for IEEE 802.11w.
+! CONFIG_IEEE80211W=y
+  
+  # Select TLS implementation
+  # openssl = OpenSSL (default)
+--- 325,331 ----
+  
+  # IEEE 802.11w (management frame protection), also known as PMF
+  # Driver support is also needed for IEEE 802.11w.
+! #CONFIG_IEEE80211W=y
+  
+  # Select TLS implementation
+  # openssl = OpenSSL (default)
+***************
+*** 517,523 ****
+  
+  # Autoscan
+  # This can be used to enable automatic scan support in wpa_supplicant.
+! # See wpa_supplicant.conf for more information on autoscan usage.
+  #
+  # Enabling directly a module will enable autoscan support.
+  # For exponential module:
+--- 517,523 ----
+  
+  # Autoscan
+  # This can be used to enable automatic scan support in wpa_supplicant.
+! # See wpa_supplicant.conf for more information on autoscan usage.
+  #
+  # Enabling directly a module will enable autoscan support.
+  # For exponential module:

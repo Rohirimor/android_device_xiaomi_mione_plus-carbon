@@ -1,0 +1,16 @@
+*** /home/malabarth/carbon/frameworks/av/camera/CameraParameters.cpp	2014-05-28 11:46:49.955096312 +0200
+--- /home/malabarth/carbon.old/frameworks/av/camera/CameraParameters.cpp	2014-05-27 20:50:46.714476106 +0200
+***************
+*** 127,132 ****
+--- 127,137 ----
+  const char CameraParameters::KEY_SUPPORTED_REDEYE_REDUCTION[] = "redeye-reduction-values";
+  const char CameraParameters::KEY_HIGH_DYNAMIC_RANGE_IMAGING[] = "hdr";
+  const char CameraParameters::KEY_SUPPORTED_HDR_IMAGING_MODES[] = "hdr-values";
++ 
++ // the fxxking xiaomi stuff
++ const char CameraParameters::KEY_GAMMA[] = "gamma";
++ const char CameraParameters::KEY_CONVERSION[] = "conversion";
++ const char CameraParameters::KEY_MATRIX[] = "matrix";
+  #endif
+  const char CameraParameters::KEY_VIDEO_SIZE[] = "video-size";
+  const char CameraParameters::KEY_SUPPORTED_VIDEO_SIZES[] = "video-size-values";

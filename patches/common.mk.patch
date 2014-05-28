@@ -1,0 +1,15 @@
+*** /home/malabarth/carbon/vendor/carbon/config/common.mk	2014-05-28 11:55:04.185110733 +0200
+--- /home/malabarth/carbon.old/vendor/carbon/config/common.mk	2014-05-27 20:48:27.974472058 +0200
+***************
+*** 51,60 ****
+      ro.com.android.dataroaming=false \
+      persist.sys.root_access=3
+  
+- # selinux dialog
+- PRODUCT_PROPERTY_OVERRIDES += \
+-     ro.build.selinux=1
+- 
+  # camera shutter sound property
+  PRODUCT_PROPERTY_OVERRIDES += \
+      persist.sys.camera-sound=1
+--- 51,56 ----

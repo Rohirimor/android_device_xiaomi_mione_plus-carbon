@@ -1,0 +1,27 @@
+[
+  {
+    "target_path": "device/xiaomi/msm8660-common",
+    "repository": "iptux/android_device_xiaomi_msm8660-common",
+    "branch":"cm-11.0"
+  },
+  {
+    "target_path": "device/xiaomi/mione_plus",
+    "repository": "iptux/android_device_xiaomi_mione_plus",
+    "branch":"cm-11.0"
+  },
+  {
+    "target_path": "vendor/xiaomi/mione_plus",
+    "repository": "iptux/android_vendor_xiaomi_mione_plus",
+    "branch":"cm-11.0"
+  },
+  {
+    "target_path": "hardware/qcom/display-legacy",
+    "repository": "Team-Hydra/android_hardware_qcom_display-legacy"
+  },
+  {
+    "target_path": "hardware/qcom/media-legacy",
+    "repository": "Team-Hydra/android_hardware_qcom_media-legacy",
+    "branch":"cm-11.0"
+  }
+]
+  

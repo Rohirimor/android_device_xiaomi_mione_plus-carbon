@@ -1,0 +1,13 @@
+*** /home/malabarth/carbon/external/wpa_supplicant_8/src/drivers/android_drv.h	2014-05-28 11:46:49.718429638 +0200
+--- /home/malabarth/carbon.old/external/wpa_supplicant_8/src/drivers/android_drv.h	2014-05-27 20:57:49.364488439 +0200
+***************
+*** 14,19 ****
+--- 14,21 ----
+  
+  #define WPA_EVENT_DRIVER_STATE "CTRL-EVENT-DRIVER-STATE "
+  
++ #define WEXT_CSCAN_AMOUNT		9
++ 
+  #define MAX_SSID_LEN 32
+  
+  #define MAX_DRV_CMD_SIZE		248

@@ -1,0 +1,17 @@
+cp INetworkManagementService.aidl /home/malabarth/carbon/frameworks/base/core/java/android/os/INetworkManagementService.aidl
+cp NetworkManagementService.java /home/malabarth/carbon/frameworks/base/services/java/com/android/server/NetworkManagementService.java
+cp WifiStateMachine.java /home/malabarth/carbon/frameworks/base/wifi/java/android/net/wifi/WifiStateMachine.java
+cp CommandListener.cpp /home/malabarth/carbon/system/netd/CommandListener.cpp
+cp SoftapController.cpp /home/malabarth/carbon/system/netd/SoftapController.cpp
+cp SoftapController.h /home/malabarth/carbon/system/netd/SoftapController.h
+cp pkt_sched.h /home/malabarth/carbon/external/iproute2/include/linux/pkt_sched.h
+cp embedded.mk /home/malabarth/carbon/build/target/product/embedded.mk
+cp common.mk /home/malabarth/carbon/vendor/carbon/config/common.mk
+cp android_drv.h /home/malabarth/carbon/external/wpa_supplicant_8/src/drivers/android_drv.h
+cp driver_wext.c /home/malabarth/carbon/external/wpa_supplicant_8/src/drivers/driver_wext.c
+cp android.config /home/malabarth/carbon/external/wpa_supplicant_8/wpa_supplicant/android.config
+cp CameraParameters.cpp /home/malabarth/carbon/frameworks/av/camera/CameraParameters.cpp
+cp CameraParameters.h /home/malabarth/carbon/frameworks/av/include/camera/CameraParameters.h
+cp Android.mk /home/malabarth/carbon/hardware/libhardware_legacy/wifi/Android.mk
+cp wifi.c /home/malabarth/carbon/hardware/libhardware_legacy/wifi/wifi.c
+

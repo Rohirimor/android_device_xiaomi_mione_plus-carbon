@@ -1,0 +1,12 @@
+*** /home/malabarth/carbon/external/iproute2/include/linux/pkt_sched.h	2014-05-28 11:45:48.991761200 +0200
+--- /home/malabarth/carbon.old/external/iproute2/include/linux/pkt_sched.h	2014-05-27 20:55:59.707818572 +0200
+***************
+*** 118,123 ****
+--- 118,124 ----
+  struct tc_prio_qopt {
+  	int	bands;			/* Number of bands */
+  	__u8	priomap[TC_PRIO_MAX+1];	/* Map: logical priority -> PRIO band */
++ 	int enable_flow;
+  };
+  
+  /* MULTIQ section */

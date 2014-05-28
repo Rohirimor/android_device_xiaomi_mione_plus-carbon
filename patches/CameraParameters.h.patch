@@ -1,0 +1,16 @@
+*** /home/malabarth/carbon/frameworks/av/include/camera/CameraParameters.h	2014-05-28 11:46:49.965096312 +0200
+--- /home/malabarth/carbon.old/frameworks/av/include/camera/CameraParameters.h	2014-05-27 20:54:00.207815086 +0200
+***************
+*** 761,766 ****
+--- 761,771 ----
+      //Redeye Reduction
+      static const char KEY_REDEYE_REDUCTION[];
+      static const char KEY_SUPPORTED_REDEYE_REDUCTION[];
++ 
++     // the fxxking xiaomi stuff
++     static const char KEY_GAMMA[];
++     static const char KEY_CONVERSION[];
++     static const char KEY_MATRIX[];
+  #endif
+  
+      // Values for white balance settings.

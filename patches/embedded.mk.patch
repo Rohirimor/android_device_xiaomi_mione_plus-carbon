@@ -1,0 +1,12 @@
+*** /home/malabarth/carbon/build/target/product/embedded.mk	2014-05-28 11:45:06.861759970 +0200
+--- /home/malabarth/carbon.old/build/target/product/embedded.mk	2014-05-27 20:47:45.467804152 +0200
+***************
+*** 69,75 ****
+  
+  # SELinux packages
+  PRODUCT_PACKAGES += \
+-     auditd \
+      sepolicy \
+      file_contexts \
+      seapp_contexts \
+--- 69,74 ----

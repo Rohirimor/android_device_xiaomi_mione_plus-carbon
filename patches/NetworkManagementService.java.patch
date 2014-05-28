@@ -1,0 +1,86 @@
+*** /home/malabarth/carbon/frameworks/base/services/java/com/android/server/NetworkManagementService.java	2014-05-28 11:48:05.135098505 +0200
+--- /home/malabarth/carbon.old/frameworks/base/services/java/com/android/server/NetworkManagementService.java	2014-05-27 21:49:34.821245722 +0200
+***************
+*** 1123,1129 ****
+  
+      @Override
+      public void startAccessPoint(
+!             WifiConfiguration wifiConfig, String wlanIface) {
+          mContext.enforceCallingOrSelfPermission(CONNECTIVITY_INTERNAL, TAG);
+          try {
+              if (mContext.getResources().getBoolean(
+--- 1123,1129 ----
+  
+      @Override
+      public void startAccessPoint(
+!             WifiConfiguration wifiConfig, String wlanIface, String softapIface) {
+          mContext.enforceCallingOrSelfPermission(CONNECTIVITY_INTERNAL, TAG);
+          try {
+              if (mContext.getResources().getBoolean(
+***************
+*** 1135,1143 ****
+                  mConnector.execute("softap", "start", wlanIface);
+              }
+              if (wifiConfig == null) {
+!                 mConnector.execute("softap", "set", wlanIface);
+              } else {
+!                 mConnector.execute("softap", "set", wlanIface, wifiConfig.SSID,
+                                     "broadcast", "6", getSecurityType(wifiConfig),
+                                     new SensitiveArg(wifiConfig.preSharedKey));
+              }
+--- 1135,1143 ----
+                  mConnector.execute("softap", "start", wlanIface);
+              }
+              if (wifiConfig == null) {
+!                 mConnector.execute("softap", "set", wlanIface, softapIface);
+              } else {
+!                 mConnector.execute("softap", "set", wlanIface, softapIface, wifiConfig.SSID,
+                                     "broadcast", "6", getSecurityType(wifiConfig),
+                                     new SensitiveArg(wifiConfig.preSharedKey));
+              }
+***************
+*** 1173,1179 ****
+      public void stopAccessPoint(String wlanIface) {
+          mContext.enforceCallingOrSelfPermission(CONNECTIVITY_INTERNAL, TAG);
+          try {
+!             mConnector.execute("softap", "stopap");
+              wifiFirmwareReload(wlanIface, "STA");
+          } catch (NativeDaemonConnectorException e) {
+              throw e.rethrowAsParcelableException();
+--- 1173,1179 ----
+      public void stopAccessPoint(String wlanIface) {
+          mContext.enforceCallingOrSelfPermission(CONNECTIVITY_INTERNAL, TAG);
+          try {
+!             mConnector.execute("softap", "stop", wlanIface);
+              wifiFirmwareReload(wlanIface, "STA");
+          } catch (NativeDaemonConnectorException e) {
+              throw e.rethrowAsParcelableException();
+***************
+*** 1181,1193 ****
+      }
+  
+      @Override
+!     public void setAccessPoint(WifiConfiguration wifiConfig, String wlanIface) {
+          mContext.enforceCallingOrSelfPermission(CONNECTIVITY_INTERNAL, TAG);
+          try {
+              if (wifiConfig == null) {
+!                 mConnector.execute("softap", "set", wlanIface);
+              } else {
+!                 mConnector.execute("softap", "set", wlanIface, wifiConfig.SSID,
+                                     "broadcast", "6", getSecurityType(wifiConfig),
+                                     new SensitiveArg(wifiConfig.preSharedKey));
+              }
+--- 1181,1193 ----
+      }
+  
+      @Override
+!     public void setAccessPoint(WifiConfiguration wifiConfig, String wlanIface, String softapIface) {
+          mContext.enforceCallingOrSelfPermission(CONNECTIVITY_INTERNAL, TAG);
+          try {
+              if (wifiConfig == null) {
+!                 mConnector.execute("softap", "set", wlanIface, softapIface);
+              } else {
+!                 mConnector.execute("softap", "set", wlanIface, softapIface, wifiConfig.SSID,
+                                     "broadcast", "6", getSecurityType(wifiConfig),
+                                     new SensitiveArg(wifiConfig.preSharedKey));
+              }
